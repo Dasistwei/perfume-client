@@ -7,9 +7,6 @@ const fs = require('fs')
 let engine = require("ejs-locals");
 require('dotenv').config({path: './config.env'});
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
 var app = express();
 
 
