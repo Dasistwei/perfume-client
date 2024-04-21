@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/admin.css">
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>admin</h1>
+      <button>add product</button>
+      <!-- create -->
+      <div class="create">
+        <button class="X">X</button>
+        <div class="container">
+          <form id="create_form">
+            <label for="category">category:</label><br>
+            <input type="text" id="category" name="category" value="木質"><br>
+            <label for="image">image:</label><br>
+            <input type="text" id="image" name="image" value="https://images.unsplash.com/photo-1532413992378-f169ac26fff0?auto=format&fit=crop&q=80&w=2080&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><br>
+            <label for="is_enabled">is_enabled:</label><br>
+            <input type="text" id="is_enabled" name="is_enabled" value="1"><br>
+            <label for="origin_price">origin_price:</label><br>
+            <input type="text" id="origin_price" name="origin_price" value="700"><br>
+            <label for="price">price:</label><br>
+            <input type="text" id="price" name="price" value="650"><br>
+            <label for="title">title:</label><br>
+            <input type="text" id="title" name="title" value="神秘東方"><br>
+            <label for="unit">unit:</label><br>
+            <input type="text" id="unit" name="unit" value="50ml"><br>
+            <input type="submit" value="Submit">
+          </form>
+
+        </div>
+      </div>
+      <!-- update -->
+      <div class="update">
+        <button class="x">X</button>
+        <div class="container">
+          <form id="update_form" class="hide">
+            <label for="category">category:</label><br>
+            <input type="text" id="category" name="category" value="木質"><br>
+            <label for="image">image:</label><br>
+            <input type="text" id="image" name="image" value="https://images.unsplash.com/photo-1532413992378-f169ac26fff0?auto=format&fit=crop&q=80&w=2080&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><br>
+            <label for="is_enabled">is_enabled:</label><br>
+            <input type="text" id="is_enabled" name="is_enabled" value="1"><br>
+            <label for="origin_price">origin_price:</label><br>
+            <input type="text" id="origin_price" name="origin_price" value="700"><br>
+            <label for="price">price:</label><br>
+            <input type="text" id="price" name="price" value="650"><br>
+            <label for="title">title:</label><br>
+            <input type="text" id="title" name="title" value="神秘東方"><br>
+            <label for="unit">unit:</label><br>
+            <input type="text" id="unit" name="unit" value="50ml"><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <th>no</th>
+        <th>類別</th>
+        <th>圖片</th>
+        <th>啟用</th>
+        <th>原價</th>
+        <th>特價</th>
+        <th>品名</th>
+        <th>容量</th>
+        <th></th>
+      </tr>
+    </table>
+  </div>
+  <script src="../js/admin.js"></script> 
+</body>
+</html>

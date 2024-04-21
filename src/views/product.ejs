@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  </style>
+  <link rel="stylesheet" href="<%= CLIENT_URL %>/css/product.css">
+  <script src="https://kit.fontawesome.com/fc907d4260.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar wrap">
+      <div class="logo">
+        <img src="<%= CLIENT_URL %>/images/d’Perfume.png" alt="nav-logo">
+      </div>
+      <div class="ham-menu menu">
+        <a href="#">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </a>
+      </div>      
+      <div class="main-menu menu">
+        <a href="#">
+          <i class="fa-solid fa-shop"></i>
+          <span>Product</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-user-large"></i>
+          <span>log in</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Cart(3)</span>
+        </a>
+        <a href="<%= CLIENT_URL %>/admin">
+          <i class="fa-solid fa-hammer"></i>
+          <span>後台</span>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="category">
+        <div class="category-list wrap">
+          <a href="#">perfume</a>
+        </div>
+      </div>
+      <div class="products">
+        <div class="products-list wrap">
+          <div class="product">
+            <div class="img">
+              <!-- <img src="https://images.unsplash.com/photo-1582211594533-268f4f1edcb9?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
+            </div>
+            <h3>Poppy&Barley</h3>
+            <span>Jo Malon</span>
+            <div class="price">
+              <p>NT$1380</p>
+              <p>NT$1580</p>
+            </div>
+            <div class="actions">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subscribe">
+        <div class="info wrap">
+          <div class="text">
+            <h3>記得</h3>
+            <h3>訂閱以獲得更多資訊</h3>
+          </div>
+          <div class="inputs">
+            <input type="text" placeholder="Your email address">
+            <input type="submit" placeholder="subscribe">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="logo">
+          <img src="<%= CLIENT_URL %>/images/d’Perfumew.png" alt="footer-logo">
+          <div class="copyright">© 2020. All Rights Reserved.</div>
+        </div>
+        <div class="more">
+          <a href="#">Product</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/product.js"></script> 
+</html>

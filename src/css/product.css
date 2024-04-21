@@ -1,0 +1,272 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+      v2.0 | 20110126
+      License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }    
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    
+    .container{
+      max-width: 1920px;
+    }
+    .wrap{
+      width: 75%;
+      margin: 0 auto;
+    }
+    .navbar{
+      /* width: 70%; */
+      /* border: 1px solid red; */
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo{
+      cursor: pointer;
+    }
+    .menu{
+      display: flex;
+    }
+    .menu a{
+      /* border: 1px solid red; */
+      flex-wrap: wrap;
+      display: flex;
+      text-decoration: none;
+      color: #8D8D8D;
+      align-self: center;
+      font-size: 1rem;
+      padding: 0 0.5rem;
+    }
+    .menu i{
+      padding-right: 0.5rem;
+    }
+    .ham-menu{
+      display: none;
+    }
+    .content{
+      /* border: 1px solid red; */
+    }
+    .category, .footer{
+      /* border: 1px solid red; */
+      background-color: #916000;
+    }
+    .category{
+      /* border: 1px solid red; */
+      padding: 0.7rem 0;
+      display: flex;
+      justify-content: center;
+    }
+    .category a{
+      color: white;
+      text-decoration: none;
+      padding-right: 1rem;
+      font-size: 1rem;
+    }
+    .products .wrap{
+      /* border: 1px solid red; */
+      padding: 4rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .product{
+      /* margin: 0 auto; */
+      /* border: 1px solid red; */
+      /* width: 255px;
+      height: 255px; */
+      padding-bottom: 1rem;
+    }
+    .product .img{
+      /* border: 1px solid blue; */
+      width: 220px;
+      height: 220px;
+      background-size: cover;
+      background-position: center;      
+    }
+
+    .product h3{
+      /* border: 1px solid red; */
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .product .price{
+      /* border: 1px solid black; */
+      display: flex;
+      align-items: center;
+    }
+    .product > h3 , span, p, i{
+      /* border: 1px solid red; */
+      display: block;
+      padding: 0.5rem 0;
+    }
+    .product > span, p:nth-child(1){
+      /* color: red; */
+      font-weight: 380;
+      padding: 0.3rem 0;
+    }
+    .product .price > p:nth-child(2){
+      color: #8D8D8D;
+      font-weight: 380;
+      padding-left: 0.5rem;
+      text-decoration:line-through;
+    }
+    .actions i{
+      font-size: 1.3rem;
+      color: #916019;
+      padding-right: 0.5rem;
+    }
+    .subscribe{
+      /* border: 1px solid red; */
+      background-image: url('http://localhost:3000/images/contact.png');
+      min-height: 300px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; 
+      display: flex;
+    }
+    .info{
+      /* border: 1px solid red; */
+      align-self: flex-end;
+      padding-bottom: 3rem;
+      /* margin: 0 auto; */
+    }
+    .info .text h3{
+      /* border: 1px solid red; */
+      color: #8D8D8D;
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+    }
+    .inputs{
+      border: 2px solid #916000;
+      background-color: #916000;
+      width: fit-content;
+    }
+    .info > input{
+      box-sizing: border-box;
+      margin-right: -0.4rem;
+    }    
+    .info input[type="text"]{
+      padding: 1rem;
+    }
+    .info input[type="submit"]{
+      border: none;
+      padding: 0.9rem;
+      color: white;
+      background-color: #916000;
+      cursor: pointer;
+      border-radius: 0px 4px 4px 0px;
+      text-align: center;
+    }
+    .footer-wrap{
+      /* border: 5px solid red; */
+      padding: 1rem 0;
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+    }
+    .footer .logo{
+      /* border: 1px solid red; */
+      display: flex;
+      align-items: center;
+    }
+    .footer .copyright{
+      padding-left: 2rem;
+    }
+    .footer .more{
+      /* border: 1px solid red; */
+      align-self: center;
+    }
+    .footer .more a{
+      color: white;
+      text-decoration: none;
+      padding-left: 2rem;
+    }
+    /* 768 */
+  @media screen and (max-width: 768px) {
+    body {
+      /* background-color: olive; */
+    }
+    .navbar{
+      /* border: 1px solid red; */
+      /* display: flex; */
+      flex-wrap: wrap;
+    }
+    .main-menu{
+      /* border: 1px solid red; */
+      background: white;
+      left: 0;
+      min-width: 100%;
+      display: none;
+      
+    }
+    .active{
+      display: block;
+    }
+    .ham-menu{
+      /* border: 1px solid red; */
+      display: flex;
+    }
+    .category-list{
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: center;
+    }
+    .product{
+      /* border: 1px solid red; */
+      /* display: flex;
+      justify-content: center; */
+      margin: 0 auto;
+    }
+    .footer .logo{
+      /* border: 1px solid red; */
+      display: flex;
+      flex-wrap: wrap;
+    }    
+    .footer .copyright{
+      /* border: 1px solid red; */
+      padding-left: 0;
+      line-height: 2rem;
+    }
+  }    
