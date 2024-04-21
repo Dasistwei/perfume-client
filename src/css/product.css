@@ -157,7 +157,7 @@
     }
     .subscribe{
       /* border: 1px solid red; */
-      background-image: url('http://localhost:3000/images/contact.png');
+      /* background-image: url('http://localhost:3000/images/contact.png'); */
       min-height: 300px;
       background-repeat: no-repeat;
       background-size: cover;

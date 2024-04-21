@@ -1,9 +1,14 @@
 const SERVER_URL = '{{SERVER_URL}}'
+const CLIENT_URL = '{{CLIENT_URL}}'
 
 const listElement = document.querySelector('.products-list')
 const catElement = document.querySelector('.category-list')
 const hamMenuElement = document.querySelector('.ham-menu')
 const mainMenuElement = document.querySelector('.main-menu')
+const subscribeElement = document.querySelector('.subscribe')
+subscribeElement.style.backgroundImage =  `url( ${CLIENT_URL}/images/contact.png)`
+
+// console.log('sub',)
 
 hamMenuElement.addEventListener('click', ()=>{
   // mainMenuElement.style.display = mainMenuElement.style.display === 'block'?'none':'block'
