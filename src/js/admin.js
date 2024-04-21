@@ -23,10 +23,12 @@ xbtn.addEventListener('click', ()=>{
 //create product 
 create_form.addEventListener('submit', function(event) {
   event.preventDefault(); // 阻止表單的默認提交行為
+  console.log('submit')
   let data = {}
   create_form.querySelectorAll('input').forEach(input => {
     data[input.name] = input.value
   })
+  console.log(data)
   createProduct(data);
 })
 //update product 
@@ -51,9 +53,11 @@ table.addEventListener('click', (event)=>{
   if(action==='update'){
     updateDiv.style.display='block'
     trNode.querySelectorAll('td').forEach(td =>{
-    if(td.dataset!==undefined){
+    if(td.dataset!==undefined && td.dataset.src){
+      trData[td.dataset.name] = td.dataset.src
+    }else if(td.dataset!==undefined){
       trData[td.dataset.name] = td.textContent
-    }
+    } 
   })        
     update_form.querySelectorAll('input').forEach(input=>{
       if(trData[input.name]!==undefined){
@@ -81,7 +85,7 @@ const getProducts = async() =>{
       newTr.innerHTML = `
         <td>${i+1}.</td>
         <td data-name='category' >${item.category}</td>
-        <td data-name='image' ><img src=${item.image} alt="" width= "100px" height="100px"></td>
+        <td data-name='image' data-src=${item.image}><img src=${item.image} alt="" width= "100px" height="100px"></td>
         <td data-name='is_enabled' >${item.is_enabled === 1?true:false}</td>
         <td data-name='origin_price' >${item.origin_price}</td>
         <td data-name='price' >${item.price}</td>
@@ -104,7 +108,8 @@ getProducts();
 
 const createProduct = async(data) =>{
   try {
-    await fetch(SERVER_URL, {
+    console.log('SERVER_URL', SERVER_URL)
+    const result = await fetch(SERVER_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', // 如果你使用 JSON 格式的請求主體
@@ -119,6 +124,7 @@ const createProduct = async(data) =>{
         "unit": data.unit,
     }) // 或者使用 formData，如果你在前端使用 FormData 對象
     })
+    console.log(result)
     window.location.reload()
   } catch (error) {
     console.log('createProduct', error)
