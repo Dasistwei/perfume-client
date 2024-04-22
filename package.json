@@ -11,9 +11,10 @@
     "dotenv": "^16.4.5",
     "ejs-locals": "^1.0.2",
     "express": "~4.16.1",
+    "loaders.css": "^0.1.2",
     "morgan": "~1.9.1"
   },
   "engines": {
     "node": "v21.6.1"
-  }  
+  }
 }

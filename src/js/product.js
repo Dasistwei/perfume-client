@@ -8,6 +8,16 @@ const mainMenuElement = document.querySelector('.main-menu')
 const subscribeElement = document.querySelector('.subscribe')
 subscribeElement.style.backgroundImage =  `url( ${CLIENT_URL}/images/contact.png)`
 
+document.addEventListener('DOMContentLoaded', function () {
+  var loader = document.querySelector('.loader');
+  loader.style.display = 'block'; // 显示 loading 动画
+
+  // 在加载完成后隐藏 loading 动画
+  window.onload = function () {
+    loader.style.display = 'none';
+  };
+});
+
 // console.log('sub',)
 
 hamMenuElement.addEventListener('click', ()=>{
