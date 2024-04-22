@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:600,300" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="<%= CLIENT_URL %>/css/loaders.css">
 </head>
 <link rel="stylesheet" href="../css/admin.css">
 <body>
@@ -14,7 +16,7 @@
       <!-- create -->
       <div class="create">
         <button class="X">X</button>
-        <div class="container">
+        <div class="container">     
           <form id="create_form">
             <label for="category">category:</label><br>
             <input type="text" id="category" name="category" value="木質"><br>
@@ -60,6 +62,13 @@
       </div>
     </div>
     <table>
+      <div class="loader">
+        <div class="loader-inner ball-scale-ripple-multiple">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>           
       <tr>
         <th>no</th>
         <th>類別</th>

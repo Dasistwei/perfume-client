@@ -44,8 +44,9 @@ app.get('/js/admin.js', (req, res) =>{
       throw err
     } else {
       const jsCode = data.toString().replace('{{SERVER_URL}}', process.env.SERVER_URL);
+      const jsCode1 = jsCode.toString().replace('{{CLIENT_URL}}', process.env.CLIENT_URL);
       res.setHeader('Content-Type', 'text/javascript');
-      res.end(jsCode)      
+      res.end(jsCode1)      
     }
   })
 })

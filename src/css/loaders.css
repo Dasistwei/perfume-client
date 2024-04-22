@@ -447,13 +447,13 @@
             animation-fill-mode: both;
     position: absolute;
     /* top: -2px; */
-    top: 3rem;
-    left: 3rem;
+    top: 15vh;
+    left: 40vw;
     /* left: -26px; */
-    width: 50px;
-    height: 50px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 100%;
-    border: 2px solid #916000;
+    border: 2px solid #8D8D8D;
     -webkit-animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
             animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8); }
 

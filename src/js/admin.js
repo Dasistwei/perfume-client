@@ -8,6 +8,15 @@ const updateDiv = document.querySelector('.update')
 const create_form = document.querySelector('#create_form')
 const update_form = document.getElementById('update_form');
 
+document.addEventListener('DOMContentLoaded', function () {
+  var loader = document.querySelector('.loader');
+  loader.style.display = 'block'; // 显示 loading 动画
+
+  // 在加载完成后隐藏 loading 动画
+  window.onload = function () {
+    loader.style.display = 'none';
+  };
+});
 
 // create form
 // toggle
