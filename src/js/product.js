@@ -36,7 +36,7 @@ const getProducts = async() =>{
       !categories.includes(item.category)&&categories.push(item.category)
       products +=  `
         <div class="product">
-          <div class="img" style="background-image: url('${item.image}')"></div>
+          <div class="img" style="background-image: url('${item.image.replace(/w=\d+/, 'w=500')}')"></div>
           <h3>${item.title}</h3>
           <span>${item.category}</span>
           <div class="price">
